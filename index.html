@@ -13,90 +13,101 @@
       padding: 0;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
-    .container {
-      width: 80%;
-      max-width: 1000px;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 30px;
-      border-radius: 10px;
-    }
-    h1 {
-      font-size: 3em;
-      color: #fff;
-      margin-bottom: 0;
-    }
-    h2 {
-      color: #ffeb3b;
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
-    .email {
-      font-size: 1.2em;
-      color: #ffeb3b;
-      margin-bottom: 30px;
-    }
-    .skills {
-      list-style-type: none;
-      padding: 0;
-    }
-    .skills li {
-      font-size: 1.1em;
-      margin: 10px 0;
-    }
-    .career-contour {
-      font-size: 1.2em;
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 15px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-    }
-    .career-contour p {
-      line-height: 1.6;
-    }
-    .footer {
-      font-size: 1.1em;
-      color: #ffeb3b;
-    }
-  </style>
-</head>
-<body>
 
-  <div class="container">
-    <h1>Syam Kumar</h1>
-    <h2>DevOps Engineer</h2>
-    <p class="email">Email: ****************@gmail.com</p>
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-    <div class="career-contour">
-      <h3>Career Contour</h3>
-      <p>I am a passionate and detail-oriented DevOps Engineer with over 3 years of experience working in fast-paced environments. My expertise lies in automating and streamlining processes, enhancing system performance, and ensuring a smooth development-to-production lifecycle. I have hands-on experience with various tools and technologies such as Git, Jenkins, Docker, Kubernetes, Terraform, and more. I am always eager to learn new technologies and continuously improve processes to achieve high levels of efficiency.</p>
-    </div>
+body {
+    background-image: url('https://via.placeholder.com/1920x1080.png?text=DevOps+Background'); /* You can replace this with a real background image URL */
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    line-height: 1.6;
+}
 
-    <h3>Skills</h3>
-    <ul class="skills">
-      <li>Git</li>
-      <li>Linux</li>
-      <li>Shell Scripting</li>
-      <li>Jenkins</li>
-      <li>Maven</li>
-      <li>Tomcat</li>
-      <li>SonarQube</li>
-      <li>Nexus</li>
-      <li>Docker</li>
-      <li>Terraform</li>
-      <li>Ansible</li>
-      <li>Kubernetes</li>
-      <li>Prometheus</li>
-      <li>Grafana</li>
-    </ul>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+}
 
-    <div class="footer">
-      <p>Thank you for visiting my resume! Looking forward to contributing to your organization's growth with my skills.</p>
-    </div>
-  </div>
+header {
+    text-align: center;
+    padding: 20px;
+}
 
-</body>
-</html>
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .email {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+section p,
+section ul {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.job h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.job ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #333;
+    color: #ccc;
+    border-radius: 5px;
+}
+
+/* Make the layout responsive */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .email {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    section p,
+    section ul {
+        font-size: 1rem;
+    }
+}
